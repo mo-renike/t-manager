@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  margin-left: auto;
+  padding: 1rem;
+}
+header a {
+  margin: 3px 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+header a:hover {
+  border-bottom: 1px solid;
+}
+a {
+  text-decoration: none;
+  color: #00d3b4;
+}
+body {
+  background: #000508;
+  color: #ced8de;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+button,
+select {
+  padding: 1rem;
+  margin: 4px 0;
+  outline: none;
+  border-radius: 7px;
+  border: none;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0071ff33;
+}
+
+.form {
+  display: block;
+  text-align: center;
+}
+.task-actions {
+  display: flex;
+}
+.task-actions button {
+  width: fit-content;
+  margin-right: 7px;
+  margin-top: 7px;
+  padding: 7px;
+}
+.delete-button {
+  background-color: red;
+}
+.edit-button {
+  background-color: yellowgreen;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex > * {
+  width: 49%;
+}
+.task {
+  border: 1px solid #0a0a0a;
+  background-color: #7b797937;
+  padding: 1rem;
+  margin: 10px 0;
+  box-shadow: 0px 3px 2px 4px #000000;
+  width: 400px;
+  border-radius: 7px;
+  position: relative;
+}
+.tas {
+  display: flex;
+  flex-direction: column;
+}
+.tas .des {
+  margin: 10px 0;
+}
+.tas .pro {
+  position: absolute;
+  background-color: rgb(60, 60, 60);
+  color: #000;
+  right: 4px;
+  top: 4px;
+  font-size: .9rem;
+  border-radius: 7px;
+  padding: 5px;
+  text-transform: capitalize;
+}
